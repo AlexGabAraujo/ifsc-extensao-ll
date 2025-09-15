@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar{
+    width: 300px;
+    height: 100vh;
+    background-color: #112D4E;
+}   
+
+.sidebar-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #AAC3DD
+}
+
+.sidebar-header-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
