@@ -1,6 +1,8 @@
 :root {
     --sidebar-color: #112D4E;
     --main-color: #F5F5F5;
+    --logo-color-1: #AAC3DD;
+    --logo-color-2: #F9F7F7;
   }
 
 *{
@@ -13,7 +15,7 @@ body{
 }
 
 .sidebar{
-    width: 300px;
+    width: 310px;
     height: 100vh;
     background-color: var(--sidebar-color);
     display: flex;
@@ -35,6 +37,14 @@ button{
     border-bottom: 1px solid var(--main-color);
 }
 
+.sidebar-header-logo #first-name{
+    color: var(--logo-color-1);
+}
+
+.sidebar-header-logo #second-name{
+    color: var(--logo-color-2);
+}
+
 .sidebar-header-logo{
     display: flex;
     flex-direction: row;
@@ -47,12 +57,14 @@ button{
     justify-content: start;
     height: 100%;
     padding: 20px;
+    gap: 20px;
 }
 
 .sidebar-options-card{
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 10px;
 }
 
 .sidebar-footer{
@@ -62,4 +74,21 @@ button{
     align-items: center;
     border-top: 1px solid var(--main-color);
     padding: 15px;
+}
+
+.sidebar-options-card img{
+    width: 45px;
+}
+
+.sidebar-options-card button{
+    color: var(--main-color);
+    font-size: 20px;
+}
+
+.sidebar-footer img{
+    width: 30px;
+}
+
+button:hover{
+    cursor: pointer;
 }
